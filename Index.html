@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Nicolas Cage Web App</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Nicolas Cage</h1>
+    </div>
+    <div id="cages">
+    </div>
+
+    <script id="CageTemplate" type="text/template">
+        <img src="<%= gsx$imghref %>" />
+        <h2>
+            <%= gsx$title %><h2>
+                <textarea rows="6" readonly>
+                    <%= gsx$text %>
+                </textarea>
+    </script>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
